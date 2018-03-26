@@ -33,6 +33,7 @@ class SearchBar extends Component {
 
 
       render() {
+        console.log("test");
         // console.log("does it render?")
         return (
           <div className="SearchBar">
