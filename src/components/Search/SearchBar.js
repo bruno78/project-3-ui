@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Input, Icon } from 'react-materialize';
 
 class SearchBar extends Component {
     constructor(props) {
@@ -39,8 +40,12 @@ class SearchBar extends Component {
           <div className="SearchBar">
             <h1>SearchBar</h1>
             <form onSubmit={this.handleSearchTermSubmit}>
+              <Input s={6}
+                      onKeyPress={this._handleKeyPress}
+                      label="Search"
+                      className="input-field" validate><Icon>search</Icon></Input>
   
-              <input type="text" onKeyPress={this._handleKeyPress} />
+              {/* <input type="text" onKeyPress={this._handleKeyPress} /> */}
 
             </form>
           </div>

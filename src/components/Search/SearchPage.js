@@ -20,13 +20,11 @@ class SearchPage extends Component {
       
       render() {
         return (
-          <div className="App">
-            {/* <SearchBar onSearchTermSubmit={this.handleSearchTermSubmit} /> */}
+          <div className="container">
             <SearchBar
               searchTerm={this.state.searchTerm}
               onSearchTermChange={this.handleSearchTermChange}
               onSearchTermSubmit={this.handleSearchTermSubmit} />
-            {/* <SearchResult searchTerm={this.state.searchTerm}  /> */}
             <SearchResult searchTerm={this.state.searchTerm} search={this.state.search} />
           </div>
         );
